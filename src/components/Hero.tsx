@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
+import heroImage from "../assets/hero.jpg";
 
 const Hero: React.FC = () => {
   return (
-    <section className="-mt-20 -mb-20 relative bg-[url('/hero.jpg')] bg-cover bg-center h-[85vh] flex items-center justify-center">
+    <section
+      className="-mt-20 -mb-20 relative bg-cover bg-center h-[85vh] flex items-center justify-center"
+      style={{ backgroundImage: `url(${heroImage})` }}
+    >
       <div className="absolute inset-0 bg-black/40 z-0" />
 
       <div className="relative z-10 text-center text-white max-w-3xl px-4">

@@ -1,11 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { FaUser } from "react-icons/fa";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { FaUser, FaBars } from "react-icons/fa";
 import travaioLogo from "../assets/travaio_logo.png";
 import { useAuth } from "../hooks/AuthProvider";
 
 const Navbar: React.FC = () => {
   const { currentUser } = useAuth();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleNavClick = (path: string) => {
+    setMenuOpen(false);
+    navigate(path);
+  };
 
   return (
     <header className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50">
@@ -22,8 +29,8 @@ const Navbar: React.FC = () => {
 
           {/* Nav + Auth Wrapper */}
           <div className="flex items-center justify-end flex-1">
-            {/* Nav Links */}
-            <nav className="hidden md:flex gap-6 text-sm font-medium text-gray-700 dark:text-gray-300 mr-6">
+            {/* Desktop Nav Links */}
+            <nav className="hidden md:flex gap-6 text-base font-medium text-gray-700 dark:text-gray-300 mr-6">
               <Link
                 to="/"
                 className="hover:text-blue-600 dark:hover:text-white transition"
@@ -56,7 +63,7 @@ const Navbar: React.FC = () => {
               </Link>
             </nav>
 
-            {/* User Icon Button */}
+            {/* User Icon (Desktop) */}
             <div className="hidden md:flex items-center">
               <Link
                 to={currentUser ? "/profile" : "/login"}
@@ -69,12 +76,57 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white">
-              {/* Mobile menu icon */}☰
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white text-2xl"
+            >
+              <FaBars />
             </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Nav Links */}
+      {menuOpen && (
+        <div className="md:hidden bg-white dark:bg-gray-900 px-4 py-4 space-y-4 shadow-md text-right">
+          <button
+            onClick={() => handleNavClick("/")}
+            className="block w-full text-base font-medium text-right text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition"
+          >
+            Home
+          </button>
+          <button
+            onClick={() => handleNavClick("/search")}
+            className="block w-full text-base font-medium text-right text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition"
+          >
+            Search
+          </button>
+          <button
+            onClick={() => handleNavClick("/explore")}
+            className="block w-full text-base font-medium text-right text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition"
+          >
+            Explore
+          </button>
+          <button
+            onClick={() => handleNavClick("/about")}
+            className="block w-full text-base font-medium text-right text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition"
+          >
+            About
+          </button>
+          <button
+            onClick={() => handleNavClick("/contact")}
+            className="block w-full text-base font-medium text-right text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-white transition"
+          >
+            Contact
+          </button>
+          <button
+            onClick={() => handleNavClick(currentUser ? "/profile" : "/login")}
+            className="inline-block text-base font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-full"
+          >
+            {currentUser ? "Account" : "Sign In"}
+          </button>
+        </div>
+      )}
     </header>
   );
 };
