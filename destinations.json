@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Tokyo",
+    "description": "Experience the perfect blend of ancient tradition and futuristic innovation in Japan's bustling capital."
+  },
+  {
+    "name": "Paris",
+    "description": "Fall in love with the City of Light, where romance, art, and gourmet cuisine meet on every corner."
+  },
+  {
+    "name": "New York",
+    "description": "From Times Square to Central Park, the Big Apple never sleeps — and always delivers."
+  },
+  {
+    "name": "Barcelona",
+    "description": "Sun-soaked beaches, Gaudí architecture, and vibrant nightlife await in this Catalonian gem."
+  },
+  {
+    "name": "Dubai",
+    "description": "A luxury desert oasis where futuristic skyscrapers rise beside traditional souks and golden sands."
+  },
+  {
+    "name": "Rome",
+    "description": "Step into a living museum of ancient ruins, Renaissance art, and unforgettable pasta in Italy’s capital."
+  },
+  {
+    "name": "London",
+    "description": "Where history meets modern cool — visit royal palaces, world-class museums, and buzzing pubs."
+  },
+  {
+    "name": "Bangkok",
+    "description": "A street food paradise, Bangkok offers golden temples, floating markets, and electric nightlife."
+  },
+  {
+    "name": "Sydney",
+    "description": "From the Opera House to Bondi Beach, Sydney dazzles with laid-back luxury and coastal charm."
+  },
+  {
+    "name": "Istanbul",
+    "description": "Straddling Europe and Asia, Istanbul's rich cultural layers are matched only by its vibrant bazaars."
+  },
+  {
+    "name": "Amsterdam",
+    "description": "Cycle through canals, art museums, and trendy cafés in one of Europe’s most charming cities."
+  },
+  {
+    "name": "Singapore",
+    "description": "A futuristic city-state where skyscrapers, hawker food, and lush gardens coexist in perfect harmony."
+  },
+  {
+    "name": "San Francisco",
+    "description": "Famous for its Golden Gate views, SF offers foggy mornings, tech vibes, and steep hills with soul."
+  },
+  {
+    "name": "Lisbon",
+    "description": "Tram rides, pastel buildings, and cliffside views make Portugal’s capital a sun-drenched delight."
+  },
+  {
+    "name": "Prague",
+    "description": "Cobblestone lanes, gothic spires, and medieval magic await in the heart of the Czech Republic."
+  },
+  {
+    "name": "Cape Town",
+    "description": "Adventure meets scenery with Table Mountain, beaches, and wine country all in reach."
+  },
+  {
+    "name": "Seoul",
+    "description": "Hyper-modern yet deeply traditional, Seoul is a fast-paced, style-forward city full of surprises."
+  },
+  {
+    "name": "Buenos Aires",
+    "description": "The Paris of South America — tango, steak, and neoclassical beauty on every boulevard."
+  },
+  {
+    "name": "Toronto",
+    "description": "Diverse, friendly, and buzzing with city life — Canada’s largest city is a cultural playground."
+  },
+  {
+    "name": "Hanoi",
+    "description": "Vietnam’s capital balances ancient temples and French colonial streets with tasty street eats."
+  },
+  {
+    "name": "Reykjavik",
+    "description": "The gateway to Icelandic adventure — quirky, cozy, and surrounded by jaw-dropping landscapes."
+  },
+  {
+    "name": "Cairo",
+    "description": "The timeless wonder of the pyramids meets the chaos and charm of Egypt’s largest city."
+  },
+  {
+    "name": "Mexico City",
+    "description": "A mega-metropolis of murals, mezcal, markets, and 24/7 culture and cuisine."
+  },
+  {
+    "name": "Athens",
+    "description": "Where Western civilization began — marble ruins, hilltop sunsets, and a Mediterranean soul."
+  },
+  {
+    "name": "Vancouver",
+    "description": "A stunning mix of ocean, mountains, and multiculturalism — outdoorsy and urban all at once."
+  }
+]

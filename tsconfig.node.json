@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "CommonJS",
+    "target": "ESNext",
+    "esModuleInterop": true
+  },
+  "include": ["vite.config.ts"]
+}
